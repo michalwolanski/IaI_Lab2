@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Dla michala</title>
 </head>
 <body>
 <nav>
@@ -11,24 +12,72 @@
         <li><a href="">Blog</a></li>
         <li><a href="">Quiz</a></li>
         <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="map.html">MAPA</a></li>
     </ul>
 </nav>
+
 <form>
 
-    <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputimie">Imie</label>
+            <input type="text" name="nazwa"  id="inputimie" placeholder="Wprowadz Imie">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputnazwisko">Nazwisko</label>
+            <input type="text" name="nazwa" id="inputnazwisko" placeholder="Wprowadz nazwisko">
+        </div>
+        <div class="from-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" name="nazwa" id="inputEmail" placeholder="Wprowadz email">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+        </div>
+    </div>
+    <div class="from-group col-md-6">
+        <label for="inputplec">Płeć</label>
+        <input type="radio" name="plec" id="inputplec" checked>Mezczyzna
+        <input type="radio" name="plec"  >Kobieta
+    </div>
+    <label>OPIS</label>
+    <div>
+        <textarea rows="4" cols="50" >
+            AIR
+        </textarea>
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="haslo">
+        <label>Wiek</label>
+        <input type="number" name="nazwa" value="22" checked>
     </div>
-    <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <label>Status</label>
+    <select>
+        <option value="1">Panna</option>
+        <option value="2">Kawaler</option>
+        <option value="3">Żonaty</option>
+        <option value="4">Zameżny</option>
+        <option value="5">Wdowa</option>
+        <option value="6">Wdowiec</option>
+        <option value="7">W separacji</option>
+    </select>
+    <div>
+
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+            Check me out
+        </label>
+    </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+    <form action="reset">
+        <input type="reset" value="wyczysc">
+    </form>
+
+
+
 </form>
 </body>
 </html>
